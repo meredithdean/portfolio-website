@@ -71,6 +71,8 @@ nav a:visited {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .media-text-container img {
     border-radius: 50%;
@@ -91,5 +93,9 @@ nav a:visited {
 }
 
 #core-technologies img:hover {
+    transform: scale(1.4);
+}
+
+#contact img:hover {
     transform: scale(1.4);
 }
