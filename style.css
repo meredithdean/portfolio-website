@@ -1,0 +1,70 @@
+/* General Formatting */
+body {
+    font-family: 'Kalam', cursive;
+    background-color: #96A8C8;
+    margin: 0;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-box { /*any of the box layouts & white backgrounds*/
+	background:white;
+	border-style:solid;
+	border-width:1.5px;
+	border-color:#071419;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+    width: 50%;
+    margin: 2.5px
+    
+}
+
+nav {
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    margin: 5px;
+}
+
+nav ul {
+    margin: auto;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    border-bottom: 4px solid yellow;
+    transition: border-bottom 0.3s ease
+    
+}
+
+nav a:visited { 
+    color: black; 
+   }
+
+#about-me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:#071419;
+    border-style: solid;
+    vertical-align: baseline;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-me.white-box h1, h2 {
+    text-align: center;
+}
+
+
