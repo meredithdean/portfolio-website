@@ -10,8 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <nav class="nav">
+    <nav class="desktop-nav">
       <ul>
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="#About Me" class="nav-link">About Me</a></li>
@@ -19,18 +20,28 @@
         <li><a href="#Core Technologies" class="nav-link">Core Technologies</a></li>
         <li><a href="#Contact" class="nav-link">Contact</a></li>
       </ul>
-      
-      
     </nav>
 
-    <div class="theme-switch-content">
-      <div class="theme-switch-container">
-        <label class="theme-slider" for="checkbox">
-            <input type="checkbox" id="checkbox"/>
-            <div class="round slider"></div>
-        </label>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="#Projects" class="nav-link">Projects</a></li>
+        <li><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="theme-switch-container">
+      <label class="theme-slider" for="checkbox">
+          <input type="checkbox" id="checkbox"/>
+          <div class="round slider"></div>
+      </label>
       <p>Click this slider to change theme</p>
+      <span>Theme</span>
     </div>
+      
+      
+  
     
     <div class="main-section">
         <div id="about-me" class="white-box">
@@ -38,8 +49,8 @@
             <h2>About Me</h2>
             <p>Hello! My name is Meredith and I am a Full-Stack Developer in Edinburgh, Scotland.</p>
             <p>My interest in Web Developement started in 2022.</p>
-            
         </div>
+
         <div id="projects" class="white-box">
             <h2>Projects</h2>
             <a href="#"><div class="media-text-container">
@@ -51,22 +62,29 @@
               </div>
             </div></a>
         </div>
+
         <div id="core-technologies" class="white-box">
             <h2>Core Technologies</h2>
-            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img src="images/icons8-html-96.png"></a>
-            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="images/icons8-css-96.png"></a>
-            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="images/icons8-java-script-96.png"></a>
-            <a href="https://en.wikipedia.org/wiki/Git" target="_blank"><img src="images/icons8-version-control-96.png"></a>
-            <a href="https://github.com/meredithdean" target="_blank"><img src="images/icons8-github-96.png"></a>
-            <a href="https://en.wikipedia.org/wiki/Google_Chrome" target="_blank"><img src="images/icons8-chrome-96.png"></a>
+            <div class="image-container">
+              <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img src="images/icons8-html-96.png"></a>
+              <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="images/icons8-css-96.png"></a>
+              <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="images/icons8-java-script-96.png"></a>
+              <a href="https://en.wikipedia.org/wiki/Git" target="_blank"><img src="images/icons8-version-control-96.png"></a>
+              <a href="https://github.com/meredithdean" target="_blank"><img src="images/icons8-github-96.png"></a>
+              <a href="https://en.wikipedia.org/wiki/Google_Chrome" target="_blank"><img src="images/icons8-chrome-96.png"></a>
+            </div>
+            
             <p></p>
         </div>
+
         <div id="contact" class="white-box">
             <h2>Contact</h2>
             <p>Have an interesting project? I would love to hear about it!</p>
-            <a href="https://www.linkedin.com/in/meredith-hamilton-936a05222/" target="_blank"><img src="images/LinkedIn.png"></a>
-            <a href="https://github.com/meredithdean" target="_blank"><img src="images/Github.png"></a>
-            <a href="mailto:meredithdvhamilton@gmail.com" target="_blank"><img src="images/Mail.png"></a>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/meredith-hamilton-936a05222/" target="_blank"><img src="images/LinkedIn.png"></a></li>
+              <li><a href="https://github.com/meredithdean" target="_blank"><img src="images/Github.png"></a></li>
+              <li><a href="mailto:meredithdvhamilton@gmail.com" target="_blank"><img src="images/Mail.png"></a></li>
+            </ul>
         </div>
     </div>
 

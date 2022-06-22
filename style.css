@@ -3,6 +3,8 @@ body {
     font-family: 'Kalam', cursive;
     background-color: #96A8C8;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -16,7 +18,7 @@ a {
     align-items: center;
 }
 
-.white-box { /*any of the box layouts & white backgrounds*/
+.white-box {
 	background:white;
 	border-style:solid;
 	border-width:1.5px;
@@ -32,6 +34,9 @@ a {
     }
 
     /* Navigation bar */
+.mobile-nav {
+        display: none;
+    }
 nav {
     text-align: center;
     display: flex;
@@ -61,6 +66,8 @@ nav a:visited {
     color: black; 
    }
 
+
+
    /* About me section */
 #about-me img {
     width: 200px;
@@ -84,14 +91,17 @@ nav a:visited {
     justify-content: center;
     padding-right: 10px;
     padding-left: 10px;
+    width: auto;
 }
+
 .media-text-container img {
     border-radius: 50%;
-    
+    width: 100%;
+    height: auto;
 }
 
 .media-text-container .media-container {
-    width: 32%;
+    width: 30%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -99,11 +109,12 @@ nav a:visited {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .media-text-container .text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 68%;
+    width: 70%;
 }
 
 /* Core technologies section */
@@ -111,11 +122,26 @@ nav a:visited {
     transform: scale(1.4);
 }
 
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+
+
+
 /* Contact section */
 #contact img:hover {
     transform: scale(1.4);
 }
 
+#contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
 
 /* Dark theme */
 [theme="dark"] * {
@@ -139,9 +165,13 @@ nav a:visited {
 }
 
 /* Slider styling */
-.theme-switch-content p {
+
+.theme-switch-container p {
     margin: 0 0 0 5px;
-    width: px;
+}
+
+.theme-switch-container span {
+    visibility: hidden;
 }
 
 .theme-switch-container {
@@ -195,4 +225,38 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 1050px) {
+    .white-box {
+        width: 75%;
+    }
+
+    .theme-switch-container span {
+        visibility: visible;
+    }
+
+    .theme-switch-container p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .media-text-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #core-technologies img {
+        width: 50px;
+        height: 50px;
+    }
 }
