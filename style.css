@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #071419;
+}
+
 .main-section {
     display: flex;
     flex-direction: column;
@@ -19,16 +24,21 @@ body {
 	border-radius: 12px;
 	-moz-border-radius: 12px;
     width: 50%;
-    margin: 2.5px
-    
-}
+    margin: 2.5px;
+    background-size: 40px 40px;
+    background-image: 
+    linear-gradient(to right, rgb(197, 197, 197) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(197, 197, 197)1px, transparent 1px);
+    }
 
+    /* Navigation bar */
 nav {
     text-align: center;
+    display: flex;
 }
 
 nav li{
-    display: inline-block;
+    display: inline;
     margin: 5px;
 }
 
@@ -51,13 +61,13 @@ nav a:visited {
     color: black; 
    }
 
+   /* About me section */
 #about-me img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border:#071419;
     border-style: solid;
-    vertical-align: baseline;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -67,6 +77,7 @@ nav a:visited {
     text-align: center;
 }
 
+/* Projects section */
 .media-text-container {
     display: flex;
     flex-direction: row;
@@ -76,26 +87,112 @@ nav a:visited {
 }
 .media-text-container img {
     border-radius: 50%;
+    
 }
 
 .media-text-container .media-container {
-    width: 35%;
+    width: 32%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .media-text-container .text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
+    width: 68%;
 }
 
+/* Core technologies section */
 #core-technologies img:hover {
     transform: scale(1.4);
 }
 
+/* Contact section */
 #contact img:hover {
     transform: scale(1.4);
+}
+
+
+/* Dark theme */
+[theme="dark"] * {
+    color: #F5F7FA;
+}
+
+[theme="dark"] a:visited {
+    color: #F5F7FA;
+}
+
+[theme="dark"] nav a:hover {
+    border-bottom: 4px solid #C054BE;
+}
+
+[theme="dark"] .white-box {
+    background-color: #616e7c;
+}
+
+[theme="dark"] body {
+    background-color:#1F2933;
+}
+
+/* Slider styling */
+.theme-switch-content p {
+    margin: 0 0 0 5px;
+    width: px;
+}
+
+.theme-switch-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.theme-slider {
+    display: inline-block;
+    height: 14px;
+    position: relative;
+    width: 30px;
+}
+
+.theme-slider input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    content: "";
+    height: 14px;
+    position: absolute;
+    transition: .4s;
+    width: 14px;
+}
+
+input:checked+.slider {
+    background-color: #66bb6a;
+}
+
+input:checked+.slider:before {
+    transform: translateX(16px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
